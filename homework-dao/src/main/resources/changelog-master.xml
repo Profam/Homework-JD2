@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+<changeSet  author="profamsoft@gmail.com"  id="1.0">
+        <sql>
+        CREATE TABLE `expenses` (
+        `num` int DEFAULT NULL,
+        `paydate` date DEFAULT NULL,
+        `receiver` int DEFAULT NULL,
+        `value` decimal(10,0) DEFAULT NULL
+             );
+            <!-- PRIMARY KEY (`num`));-->
+      </sql>
+
+      <sql>
+      CREATE TABLE `receivers` (
+      `num` int DEFAULT NULL,
+      `name` varchar(255) DEFAULT NULL
+          );
+          <!-- PRIMARY KEY (`num`));-->
+     </sql>
+
+     <sql>
+         insert into expenses values (1,'2011-5-10',1,2000.0);
+         insert into expenses (num,paydate,value,receiver)
+         values(2,'2011-5-10',94200.0,2);
+         insert into expenses (num,paydate,value,receiver)
+         values(3,'2011-5-11',10000.0,3);
+         insert into expenses (num,paydate,value,receiver)
+         values(4,'2011-5-11',12950.0,2);
+
+     </sql>
+
+     <sql>
+         insert into receivers (num, name)
+         VALUES (1, 'Solo');
+         insert into receivers (num, name)
+         VALUES (2, 'Korona');
+         insert into receivers (num, name)
+         VALUES (3, 'MTS');
+     </sql>
+ </changeSet>
+
+
+</databaseChangeLog>

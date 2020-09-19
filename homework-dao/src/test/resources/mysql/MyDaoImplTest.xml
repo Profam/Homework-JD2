@@ -1,0 +1,13 @@
+<dataset>
+    <receivers num="1" name="name1"/>
+    <receivers num="2" name="name2"/>
+    <receivers num="3" name="name3"/>
+    <receivers num="4" name="name4"/>
+    <receivers num="5" name="name5"/>
+
+    <expenses num="1" paydate="2020-11-1" receiver="1" value="1.0"/>
+    <expenses num="2" paydate="2020-11-2" receiver="2" value="2.0"/>
+    <expenses num="3" paydate="2020-11-3" receiver="3" value="3.0"/>
+    <expenses num="4" paydate="2020-11-4" receiver="4" value="4.0"/>
+    <expenses num="5" paydate="2020-11-5" receiver="5" value="5.0"/>
+</dataset>

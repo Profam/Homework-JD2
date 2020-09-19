@@ -1,0 +1,13 @@
+
+e
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ŒÇå³8„Îğ¿.
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(¡Á•İşÿÿÿÿ8„Îğ¿.
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(×¬÷¸8„Îğ¿.
+T	java:S106-"9Replace this use of System.out or System.err by a logger.(ëı¸w8„Îğ¿.
+X	java:S125"<This block of commented-out lines of code should be removed.(µå½â8™ß——À.
+i
+java:S2095""GUse try-with-resources or close this "ResultSet" in a "finally" clause.(´Ó—şÿÿÿÿ8„Í–À.
+i
+java:S2095 "GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ8ÔÙÌŠÄ.
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(¹ìŸıÿÿÿÿ8„Îğ¿.
+U	java:S106("9Replace this use of System.out or System.err by a logger.(¼‰‘Â8„Îğ¿.
