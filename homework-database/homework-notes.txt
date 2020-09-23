@@ -1,0 +1,32 @@
+task1
+create table expenses(
+    num int,
+    paydate date,
+    receiver int,
+    value dec
+);
+create table receivers(
+    num int,
+    name varchar(255)
+);
+insert into expenses values (1,'2011-5-10',1,2000.0);
+insert into expenses (num,paydate,value,receiver)
+values(2,'2011-5-10',94200.0,2);
+insert into expenses (num,paydate,value,receiver)
+values(3,'2011-5-11',10000.0,3);
+insert into expenses (num,paydate,value,receiver)
+values(4,'2011-5-11',12950.0,2);
+
+insert into receivers (num, name)
+VALUES (1, 'Solo');
+insert into receivers (num, name)
+VALUES (2, 'Korona');
+insert into receivers (num, name)
+VALUES (3, 'MTS');
+///////////////////////////////////////////
+task2
+create table task2 select expenses.num,paydate,name,value from expenses,receivers where receiver=receivers.num and value>10000;
+///////////////////////////////////////////
+task3
+create table task3 select* from expenses;
+delete from task3 where value < 3000;
