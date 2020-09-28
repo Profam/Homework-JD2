@@ -43,7 +43,7 @@ public class DeleteServlet extends HttpServlet {
     public boolean delete(int num) throws SQLException {
         connect();
         PreparedStatement preparedStatement = connection.prepareStatement(
-                "delete from task3 where num=?");
+                "delete from expenses where num=?");
         preparedStatement.setInt(1, num);
         boolean result = preparedStatement.execute();
         preparedStatement.close();

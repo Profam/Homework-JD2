@@ -43,7 +43,7 @@ public class ManagerServlet extends HttpServlet {
             connect();
             Statement stmt = connection.createStatement();
             String sql;
-            sql = "SELECT * FROM task3";
+            sql = "SELECT * FROM expenses";
             ResultSet rs = stmt.executeQuery(sql);
             ArrayList<Expense> expenses = new ArrayList<Expense>();
             while (rs.next()) {

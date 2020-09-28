@@ -47,7 +47,7 @@ public class CreateServlet extends HttpServlet {
     public int addExpense(Expense expense) throws SQLException {
         connect();
         PreparedStatement preparedStatement = connection.prepareStatement(
-                "insert into task3 " +
+                "insert into expenses " +
                         "values (?,?,?,?)"
         );
         preparedStatement.setInt(1, expense.getNum());
